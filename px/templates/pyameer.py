@@ -30,6 +30,7 @@ def copy_and_modify_file(source_path: str, dest_path: str, new_first_line: str):
     with open(dest_path, 'w') as file:
         file.writelines(lines)
 
+
 RUFF_TOML: str = '''
 line-length = 99
 indent-width = 4
@@ -127,6 +128,6 @@ if __name__ == "__main__":
     # Copy the pipelight file in this repo
     with open("./pipelight.hcl", "w") as file:
         file.write(PIPELIGHT_HCL)
-    
+
     # Enable git hooks
     subprocess.run("pipelight enable git-hooks && pipelight ls")
