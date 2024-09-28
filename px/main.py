@@ -1,7 +1,8 @@
 import subprocess
-import typer
-from px.constants import DEFAULT_TEMPLATE, PX_PROJECT_ROOT
 
+import typer
+
+from px.constants import DEFAULT_TEMPLATE, PX_PROJECT_ROOT
 
 app = typer.Typer(rich_markup_mode="rich", no_args_is_help=True)
 
