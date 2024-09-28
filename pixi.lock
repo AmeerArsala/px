@@ -2347,9 +2347,9 @@ packages:
   timestamp: 1727014062724
 - kind: pypi
   name: python-px
-  version: 0.0.3
+  version: 0.0.4
   path: .
-  sha256: 1ebf87ff4c9fb4ccba65bb5eb71773612b7b9fb8f4a5a982e04862904ca7dffb
+  sha256: c4b550aba11aa1b32c65c2c6b824135a735f6d9562cf2e85a334a81d5c187dfd
   requires_dist:
   - pydantic>2.0
   - typer>=0.12.5,<0.13
