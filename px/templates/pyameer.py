@@ -113,11 +113,11 @@ PIPELIGHT_HCL: str = """pipelines = [
 
 if __name__ == "__main__":
     pyver: str = input("Python Target Version (for ruff)? ").replace(" ", "")
-    
+
     # Add to the end if it doesn't do it right
     if pyver.count(".") <= 1:
         pyver += "."
-    
+
     pyver = pyver[: pyver.rindex(".")].replace(".", "")
 
     fmted_pyver: str = f"py{pyver}"
