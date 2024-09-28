@@ -14,7 +14,7 @@ import os
 import shutil
 import subprocess
 
-from px.constants import PX_PROJECT_ROOT
+from ..constants import PX_PROJECT_ROOT
 
 
 def copy_and_modify_file(source_path: str, dest_path: str, new_first_line: str):
