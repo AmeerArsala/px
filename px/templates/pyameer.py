@@ -130,4 +130,4 @@ if __name__ == "__main__":
         file.write(PIPELIGHT_HCL)
 
     # Enable git hooks
-    subprocess.run("pipelight enable git-hooks && pipelight ls")
+    subprocess.run("pipelight enable git-hooks && pipelight ls", shell=True)
