@@ -1,17 +1,21 @@
+import subprocess
 import typer
+from px.constants import DEFAULT_TEMPLATE, PX_PROJECT_ROOT
+
 
 app = typer.Typer(rich_markup_mode="rich", no_args_is_help=True)
 
-@app.command()
-def _():
-    """Welcome to px!"""
-    pass
-
 
 @app.command()
-def init(a: int):
+def init(template: str = DEFAULT_TEMPLATE):
     """Initialize a project"""
-    pass
+    subprocess.run(f"python3 {PX_PROJECT_ROOT}/px/templates/{template}.py", shell=True)
+
+
+@app.command()
+def pp():
+    """Pipelight view"""
+    subprocess.run("pipelight", shell=True)
 
 
 # Start the Typer CLI
