@@ -35,8 +35,8 @@ def copy_and_modify_file(source_path: str, dest_path: str, new_first_line: str):
 
 if __name__ == "__main__":
     pyver: str = input("Python Target Version (for ruff)? ").replace(" ", "")
-    pyver = pyver[:pyver.rindex(".")].replace(".", "")
-    
+    pyver = pyver[: pyver.rindex(".")].replace(".", "")
+
     fmted_pyver: str = f"py{pyver}"
 
     # Add ruff config
