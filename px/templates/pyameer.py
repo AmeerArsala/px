@@ -64,7 +64,7 @@ select = [
   "C4", # flake8-comprehensions
   #"NPY",   # numpy
   #"PD",    # pandas
-  "FAST",  # fastapi
+  #"FAST",  # fastapi
   "W191", # tab indentation
   "W291", # trailing whitespace (--fix this)
   "W605", # invalid escape sequence
