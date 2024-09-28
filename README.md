@@ -8,7 +8,7 @@ npx for python
 Prerequisites: [pipelight](https://pipelight.dev)
 
 ```bash
-pip install py-px
+pip install python-px
 ```
 
 ## Add a Template

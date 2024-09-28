@@ -1,5 +1,5 @@
 [project]
-name = "py-px"
+name = "python-px"
 authors = [{ name = "Ameer Arsala", email = "ameer.arsala03@gmail.com" }]
 description = "npx but for python"
 version = "0.0.1"
@@ -18,14 +18,14 @@ build-backend = "hatchling.build"
 requires = ["hatchling"]
 
 [tool.hatch.build.targets.wheel]
-packages = ["px"]  # account for the discrepancy between the directroy 'px' and the pypi name 'py-px'
+packages = ["px"]  # account for the discrepancy between the directroy 'px' and the pypi name 'python-px'
 
 [tool.pixi.project]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-arm64", "win-64"]
 
 [tool.pixi.pypi-dependencies]
-py-px = { path = ".", editable = true }
+python-px = { path = ".", editable = true }
 
 [tool.pixi.feature.fdev.dependencies]
 ruff = "*"
